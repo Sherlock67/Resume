@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #082032;
+
+  }
+
+  .profile{
+    box-shadow: 0 1px 0px 0px var(--white);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+   
+  }
+ .wrapper{
+     display: flex;
+ }
+
+ .wrapper .static-txt{
+     color:white;
+   
+    
+     margin-top: 10px;
+ }
+ .wrapper .dynamic-text{
+    margin-top: 10px;
+ }
+ .wrapper .dynamic-text {
+     
+     line-height: 90px;
+     height: 90px;
+      
+     overflow: hidden; 
+
+
+ }
+ .dynamic-text li{
+     list-style: none;
+     color: #ff4c29;
+     font-size: 40px;
+     font-weight: 500;
+    
+     top: 0;
+     animation: slide 12s steps(4);
+     position: relative;
+ }
+ @keyframes slide {
+     100%{
+         top: -360px;
+     }
+ }
+ .dynamic-text li{
+     position: relative;
+ }
+ .dynamic-text li::after{
+     content: "";
+     left: 0;
+    border-left: 2px solid #ff4c29;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-color: #082032;
+     animation: typing 3s steps(16) infinite;
+     
+ }
+ @keyframes typing {
+     40%,
+     60%{
+         left: calc(100% + 30px);
+     }
+     100%{
+         left: 0;
+     }
+     
+ }
