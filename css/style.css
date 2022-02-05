@@ -88,3 +88,10 @@ body {
      margin: 0 20px;
      margin-top: 2px;
  }
+.size{
+    font-size: 25px;
+    color: whitesmoke;
+}
+.text{
+    color: gray;
+}
