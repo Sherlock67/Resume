@@ -4,6 +4,9 @@ body {
     background-color: #082032;
 
   }
+  .hh:hover{
+      color: gray;
+  }
   html{
       scroll-behavior: smooth;
   }
